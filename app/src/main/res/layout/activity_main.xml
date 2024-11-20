@@ -33,7 +33,7 @@
 
     <TextView
         android:id="@+id/tvresult"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:textSize="30sp"
@@ -41,41 +41,45 @@
         android:inputType="text"
         android:textAlignment="center"
         android:text="Result" />
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
     <Button
         android:id="@+id/buttonPlus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:textSize="20dp"
         android:text="+" />
 
     <Button
         android:id="@+id/buttonMinus"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+
         android:textSize="20dp"
         android:text="-" />
 
 
     <Button
         android:id="@+id/buttonMult"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+
         android:textSize="20dp"
         android:text="*" />
 
     <Button
         android:id="@+id/buttonDiv"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+
         android:textSize="20dp"
         android:text="/" />
+</LinearLayout>
 </LinearLayout>

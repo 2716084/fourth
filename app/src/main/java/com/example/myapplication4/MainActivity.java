@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnDiv = findViewById(R.id.buttonDiv);
         btnDiv.setOnClickListener(this);
 
-
     }
 
     @Override
@@ -47,24 +46,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             num2 = Integer.parseInt(et_num2.getText().toString());
             et_num1.setText("");
             et_num2.setText("");
-            if (v.getId() == R.id.buttonPlus) {
+            if (v.getId() == R.id.buttonPlus)
                 tv_result.setText(String.valueOf(num1 + num2));
-            }
-            if (v.getId() == R.id.buttonMinus&&num1>num2) {
+
+            if (v.getId() == R.id.buttonMinus && num1 > num2)
                 tv_result.setText(String.valueOf(num1 - num2));
-            }
-            if (v.getId() == R.id.buttonMult ) {
+            else
+                tv_result.setText("please enter new numbers");
+            if (v.getId() == R.id.buttonMult)
                 tv_result.setText(String.valueOf(num1 * num2));
-            }
-            if (v.getId() == R.id.buttonDiv && num2 != 0) {
+
+            if (v.getId() == R.id.buttonDiv && num2 != 0)
                 tv_result.setText(String.valueOf(num1 / num2));
-            }
-        } else {
+            else
+                tv_result.setText("please enter new numbers");
+        } else
             tv_result.setText("please enter numbers");
-
-
-        }
-
-
     }
 }
