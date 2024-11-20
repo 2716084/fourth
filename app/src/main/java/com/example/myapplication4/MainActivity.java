@@ -50,13 +50,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (v.getId() == R.id.buttonPlus) {
                 tv_result.setText(String.valueOf(num1 + num2));
             }
-            if (v.getId() == R.id.buttonMinus) {
+            if (v.getId() == R.id.buttonMinus&&num1>num2) {
                 tv_result.setText(String.valueOf(num1 - num2));
             }
-            if (v.getId() == R.id.buttonMinus) {
+            if (v.getId() == R.id.buttonMult ) {
                 tv_result.setText(String.valueOf(num1 * num2));
             }
-            if (v.getId() == R.id.buttonMinus && num2 != 0) {
+            if (v.getId() == R.id.buttonDiv && num2 != 0) {
                 tv_result.setText(String.valueOf(num1 / num2));
             }
         } else {
